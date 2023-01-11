@@ -48,6 +48,7 @@ const saveUserForm = (event) => {
     userEntry.push(entry);
     localStorage.setItem("userEntries", JSON.stringify(userEntry));
     displayEntries();
+    document.getElementById("inline-full-name").value="";
 }
 userForm.addEventListener("submit", saveUserForm);
 displayEntries();
