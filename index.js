@@ -49,11 +49,11 @@ const saveUserForm = (event) => {
     userEntry.push(entry);
     localStorage.setItem("userEntries", JSON.stringify(userEntry));
     displayEntries();
-    document.getElementById("inline-full-name").value="";
-    document.getElementById("inline-email").value="";
-    document.getElementById("inline-password").value="";
-    document.getElementById("inline-dob").value="";
-    document.getElementById("accept-terms").checked=false;
+//     document.getElementById("inline-full-name").value="";
+//     document.getElementById("inline-email").value="";
+//     document.getElementById("inline-password").value="";
+//     document.getElementById("inline-dob").value="";
+//     document.getElementById("accept-terms").checked=false;
 }
 userForm.addEventListener("submit", saveUserForm);
 displayEntries();
